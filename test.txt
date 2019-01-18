@@ -1,1 +1,39 @@
-奥ifIE你菲菲姐诶哦放假诶哦
+1.拉取服务器仓库到本地
+git clone http://xxxxx(服务器git地址)
+2.在git项目里面添加新的文件到本地
+git add . (点号表示添加当前目录所有新建的文件)  
+git add test1.txt  word.doc  main.java(添加单个或多个文件)
+3.提交本地修改文件到本地仓库
+git commit -m "当前修改的描述"
+例如：git commit -m "添加test1.txt,word.doc,main.java文件"
+git commit -a  跳过描述直接提交
+4.提交本地仓库文件到git服务器
+git push
+5.更新git项目到本地
+git pull
+6.查看当前本地文件的修改状态
+git status -s
+7.查看提交记录 
+git log
+8.设置查看当前git的用户名和邮箱
+git config user.name （查看当前git仓库用户名）
+git config user.email   (查看当前git仓库用户的邮箱)
+
+git config --global user.name (查看全局git用户名)
+git config --global user.email (查看全局git邮箱)
+
+git config user.name "user1" (设置当前git仓库的用户名为user1)
+git config user.email "user1@163.com" (设置当前仓库的用户邮箱为githup注册邮箱"user1@163.com")
+
+git config --global user.name "user1" (设置全局git仓库的用户名为user1)
+git config --global user.email "user1@163.com" (设置全局仓库的用户邮箱为githup注册邮箱"user1@163.com")
+
+9.撤销修改最后一次的提交（commit）
+git commit --amend
+
+10.查看分支
+git branch
+11.添加分支
+git branch "分支名字"
+12.切换分支
+git checkout 分支名字
